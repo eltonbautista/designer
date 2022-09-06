@@ -1,5 +1,7 @@
 ---
-import Hero from "../components/home/Hero.astro";
+import HeroSection from "../components/home/HeroSection.astro";
+import ProjectBreakOne from "../components/home/ProjectBreakOne.astro";
+import ProjectOne from "../components/home/ProjectOne.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 import global from "../styles/global.css";
@@ -10,6 +12,8 @@ import global from "../styles/global.css";
     <Navbar />
   </header>
   <main class="grid">
-    <Hero />
+    <HeroSection />
+    <ProjectOne />
+    <ProjectBreakOne />
   </main>
 </Layout>
