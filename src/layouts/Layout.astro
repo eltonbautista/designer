@@ -2,6 +2,7 @@
 export interface Props {
   title: string;
 }
+import Footer from "../components/Footer.astro";
 import ModalMenu from "../components/ModalMenu.astro";
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
@@ -27,6 +28,7 @@ const { title } = Astro.props as Props;
       </nav>
     </header>
     <slot />
+    <Footer />
     <input type="checkbox" id="my-modal-5" class="modal-toggle" />
     <div class="modal max-h-screen max-w-screen">
       <div class="modal-box min-w-[100%] min-h-screen">
