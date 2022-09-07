@@ -1,0 +1,25 @@
+---
+import HeadingOne from "../HeadingOne.astro";
+
+export interface IImageSetOneProps {
+  bgColor: string;
+}
+
+const { content, bgColor } = Astro.props;
+---
+
+<section class="grid p-6">
+  <div class="justify-self-center grid max-w-screen-xl w-full">
+    <div class="grid grid-rows-2 grid-cols-2 gap-4">
+      <div class:list={["col-span-2", bgColor]}>
+        <img src={content.istione} />
+      </div>
+      <div class="flex items-center">
+        <img src={content.istitwo} />
+      </div>
+      <div class="flex items-center">
+        <img src={content.istithree} />
+      </div>
+    </div>
+  </div>
+</section>
