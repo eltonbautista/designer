@@ -7,6 +7,7 @@ module.exports = {
       md: "768px",
       lg: "992px",
       xl: "1440px",
+      xxl: "2048px",
     },
     fontFamily: {
       Questrial: ["Questrial", "sans-serif"],
