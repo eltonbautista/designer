@@ -1,0 +1,19 @@
+---
+import Layout from "./Layout.astro";
+import "../styles/global.css";
+import HeadingOne from "../components/HeadingOne.astro";
+
+const { content } = Astro.props;
+---
+
+<Layout title={`Case Study: ${content.title}`}>
+  <main class="grid">
+    <section class="grid pl-6 pr-6">
+      <div class="justify-self-center grid max-w-screen-xl w-full">
+        <div>
+          <HeadingOne text={content.title} lineHeight />
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
