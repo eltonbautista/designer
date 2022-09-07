@@ -8,7 +8,7 @@
     <a class="btn btn-ghost normal-case text-xl">elton bautista.</a>
   </div>
   <div class="flex-none">
-    <button class="btn btn-square btn-ghost">
+    <label for="my-modal-5" class="btn modal-button" id="modal-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -20,6 +20,15 @@
           stroke-width="2"
           d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
-    </button>
+    </label>
+    <script defer is:inline>
+      const modalButton = document.querySelector("#modal-button");
+      const body = document.querySelector("body");
+      // when modal is open, stop scrolling
+      modalButton.addEventListener("click", function (e) {
+        body.style.height = "100%";
+        body.style.overflowY = "hidden";
+      });
+    </script>
   </div>
 </div>
