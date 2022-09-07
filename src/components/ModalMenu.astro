@@ -1,4 +1,5 @@
 ---
+import HeadingOne from "./HeadingOne.astro";
 ---
 
 <section class="grid lg:pt-7">
@@ -14,35 +15,31 @@
 
     <div class="grid gap-10 grid-cols-2 lg:grid-cols-4">
       <div class="col-span-2">
-        <h1 class="text-4xl lg:text-9xl">
-          <span>
-            <a class="link no-underline" href="/">home.</a>
-          </span>
-        </h1>
-        <h1 class="text-4xl lg:text-9xl">
-          <span>
-            <a class="link no-underline">about.</a>
-          </span>
-        </h1>
-        <h1 class="text-4xl lg:text-9xl">
-          <span><a class="link no-underline">contact.</a></span>
-        </h1>
+        <HeadingOne lineHeight>
+          <a class="link no-underline" href="/">home.</a>
+        </HeadingOne>
+        <HeadingOne lineHeight>
+          <a class="link no-underline" href="">about.</a>
+        </HeadingOne>
+        <HeadingOne lineHeight>
+          <a class="link no-underline" href="">contact.</a>
+        </HeadingOne>
       </div>
 
       <div>
-        <h3 class="lg:text-2xl">
+        <h3 class="lg:text-2xl xl:text-4xl">
           <span
             ><a class="link no-underline" href="/case-studies/yaba">yaba.</a>
           </span>
         </h3>
-        <h3 class="lg:text-2xl">
+        <h3 class="lg:text-2xl xl:text-4xl">
           <span>
             <a class="link no-underline" href="/case-studies/groomify">
               Groomify</a
             >
           </span>
         </h3>
-        <h3 class="lg:text-2xl">
+        <h3 class="lg:text-2xl xl:text-4xl">
           <span>
             <a
               class="link no-underline"
@@ -54,7 +51,7 @@
       </div>
 
       <div class="text-center lg:text-start">
-        <h3 class="lg:text-base">
+        <h3 class="lg:text-base xl:text-3xl">
           <span
             ><a
               class="link no-underline"
@@ -64,7 +61,7 @@
             >
           </span>
         </h3>
-        <h3 class="lg:text-base">
+        <h3 class="lg:text-base xl:text-3xl">
           <span>
             <a
               class="link no-underline"
@@ -76,7 +73,7 @@
             >
           </span>
         </h3>
-        <h3 class="lg:text-base">
+        <h3 class="lg:text-base xl:text-3xl">
           <span>
             <a
               class="link no-underline"

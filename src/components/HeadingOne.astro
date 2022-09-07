@@ -1,0 +1,19 @@
+---
+export interface ICaseStudyLayout {
+  lineHeight?: boolean;
+  pl?: string;
+  text: string;
+}
+const { lineHeight, pl, text } = Astro.props;
+---
+
+<h1
+  class={`text-4xl lg:text-8xl xl:text-9xl ${
+    lineHeight ? null : "leading-[0]"
+  } md:text-7xl`}
+>
+  <span class:list={[pl]}>
+    {text}
+    <slot />
+  </span>
+</h1>
