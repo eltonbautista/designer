@@ -36,6 +36,7 @@ module.exports = {
     themes: [
       "night",
       "business",
+      "retro",
       {
         mytheme: {
           primary: "#2a466c",
