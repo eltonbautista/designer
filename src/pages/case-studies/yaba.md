@@ -15,9 +15,9 @@ isoithree: /iphone.webp
 challengeOne: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum vel id debitis ullam neque nihil dignissimos saepe architecto laborum commodi ad possimus eveniet provident, nemo magni, perspiciatis laudantium atque!
 challengeTwo: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum vel id debitis ullam neque nihil dignissimos saepe architecto laborum commodi ad possimus eveniet provident, nemo magni, perspiciatis laudantium atque!
 
-istione: /yaba-login.webp
+istione: /yaba-login.png
 istitwo: /yaba-account.png
-istithree: /yaba-signup.webp
+istithree: /yaba-signup.png
 
 solutionOne: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum vel id debitis ullam neque nihil dignissimos saepe architecto laborum commodi ad possimus eveniet provident, nemo magni, perspiciatis laudantium atque!
 solutionTwo: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum vel id debitis ullam neque nihil dignissimos saepe architecto laborum commodi ad possimus eveniet provident, nemo magni, perspiciatis laudantium atque!
