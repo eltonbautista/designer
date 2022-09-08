@@ -12,8 +12,8 @@ const { content, bgColorOne, bgColorTwo, bgColorThree } = Astro.props;
 
 <section class="grid p-6">
   <div class="justify-self-center grid max-w-screen-xl w-full">
-    <div class="grid grid-rows-2 grid-cols-2 gap-4">
-      <div class:list={["col-span-2", bgColorOne]}>
+    <div class="grid grid-rows-3 gap-4 lg:grid-rows-2 lg:grid-cols-2">
+      <div class:list={["lg:col-span-2", bgColorOne]}>
         <img src={content.isoione} />
       </div>
       <div class:list={["flex", "items-center", bgColorTwo]}>

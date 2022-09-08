@@ -1,0 +1,36 @@
+---
+import HeadingOne from "../HeadingOne.astro";
+export interface ICSTextProps {
+  textHeader: string;
+  textOne: string;
+  textTwo: string;
+  textThree?: string;
+}
+const { content, textHeader, textOne, textTwo, textThree } = Astro.props;
+---
+
+<section class:list={["grid p-6 pt-0"]}>
+  <div class="justify-self-center grid max-w-screen-xl w-full">
+    <div class="grid gap-4">
+      <p class="text-lg xxl:text-2xl">{textHeader}</p>
+      <div
+        class:list={[
+          "grid gap-4 lg:gap-0",
+          textThree ? "md:grid-cols-3" : "md:grid-cols-2",
+        ]}
+      >
+        <p class:list={["text-sm xxl:text-lg max-w-md"]}>
+          {textOne}
+        </p>
+        <p class:list={["text-sm xxl:text-lg max-w-md"]}>
+          {textTwo}
+        </p>
+        {
+          textThree ? (
+            <p class:list={["text-sm xxl:text-lg max-w-md"]}>{textThree}</p>
+          ) : null
+        }
+      </div>
+    </div>
+  </div>
+</section>

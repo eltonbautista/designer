@@ -2,6 +2,7 @@
 layout: /src/layouts/CaseStudyLayout.astro
 title: yaba. - a budgeting application
 theme: night
+color: primary
 
 description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum vel id debitis ullam neque nihil dignissimos saepe architecto laborum commodi ad possimus eveniet provident, nemo magni, perspiciatis laudantium atque!
 role: software, branding, ux/ui

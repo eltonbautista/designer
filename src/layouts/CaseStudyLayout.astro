@@ -4,8 +4,7 @@ import "../styles/global.css";
 import HeadingOne from "../components/HeadingOne.astro";
 import CSHero from "../components/case-studies/CSHero.astro";
 import ImageSetOne from "../components/case-studies/ImageSetOne.astro";
-import CSChallenge from "../components/case-studies/CSChallenge.astro";
-import CSSolution from "../components/case-studies/CSSolution.astro";
+import CSText from "../components/case-studies/CSText.astro";
 import ImageSetTwo from "../components/case-studies/ImageSetTwo.astro";
 import CSVideo from "../components/case-studies/CSVideo.astro";
 
@@ -13,7 +12,7 @@ const { content } = Astro.props;
 ---
 
 <Layout title={`Case Study: ${content.title}`}>
-  <main class="grid" data-theme={content.theme}>
+  <main class:list={["grid", content.color]} data-theme={content.theme}>
     <CSHero content={content} />
     <ImageSetOne
       content={content}
@@ -21,9 +20,18 @@ const { content } = Astro.props;
       bgColorTwo="bg-primary"
       bgColorThree="bg-accent"
     />
-    <CSChallenge content={content} />
+    <CSText
+      content={content}
+      textHeader={content.challenge}
+      textOne={content.challengeOne}
+      textTwo={content.challengeTwo}
+    />
     <ImageSetTwo content={content} />
-    <CSSolution content={content} />
+    <CSText
+      textHeader={content.solution}
+      textOne={content.solutionOne}
+      textTwo={content.solutionTwo}
+    />
     <CSVideo content={content} />
   </main>
 </Layout>
