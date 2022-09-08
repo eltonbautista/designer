@@ -1,4 +1,5 @@
 ---
+import CSText from "./CSText.astro";
 export interface IImageSetOneProps {
   bgColor: string;
 }
@@ -6,19 +7,21 @@ export interface IImageSetOneProps {
 const { content } = Astro.props;
 ---
 
-<section class="grid p-6">
+<section class="grid">
   <div class="justify-self-center grid max-w-screen-xl w-full">
     <!-- <video autoplay loop muted max-w-full max-h-full>
       <source src={content.video} />
     </video> -->
-    <div></div>
-
     <div class="flex w-full pt-6">
       <div class="grid flex-grow card rounded-box justify-start items-center">
-        <a class="link text-info no-underline">&#171; previous.</a>
+        <a href={content.previous} class="link text-info no-underline"
+          >&#171; previous.</a
+        >
       </div>
       <div class="grid flex-grow card rounded-box items-center justify-end">
-        <a class="link text-base-content no-underline">next. &#187;</a>
+        <a href={content.next} class="link text-base-content no-underline"
+          >next. &#187;</a
+        >
       </div>
     </div>
   </div>

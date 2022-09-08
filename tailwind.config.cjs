@@ -41,6 +41,11 @@ module.exports = {
       "retro",
       "cyberpunk",
       "coffee",
+      "halloween",
+      "valentine",
+      "lofi",
+      "synthwave",
+      "garden",
       {
         mytheme: {
           primary: "#2a466c",

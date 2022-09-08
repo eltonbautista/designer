@@ -32,6 +32,13 @@ const { content } = Astro.props;
       textOne={content.solutionOne}
       textTwo={content.solutionTwo}
     />
+    <img src={content.waveOne} />
+    <img src={content.waveTwo} />
+    <CSText
+      textHeader={content.takeaway}
+      textOne={content.takeawayOne}
+      textTwo={content.takeawayTwo}
+    />
     <CSVideo content={content} />
   </main>
 </Layout>
