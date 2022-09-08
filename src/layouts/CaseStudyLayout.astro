@@ -13,9 +13,14 @@ const { content } = Astro.props;
 ---
 
 <Layout title={`Case Study: ${content.title}`}>
-  <main class="grid">
+  <main class="grid" data-theme={content.theme}>
     <CSHero content={content} />
-    <ImageSetOne content={content} bgColor="bg-secondary" />
+    <ImageSetOne
+      content={content}
+      bgColorOne="bg-neutral"
+      bgColorTwo="bg-primary"
+      bgColorThree="bg-accent"
+    />
     <CSChallenge content={content} />
     <ImageSetTwo content={content} />
     <CSSolution content={content} />

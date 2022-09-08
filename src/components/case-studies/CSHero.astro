@@ -6,14 +6,16 @@ const { content } = Astro.props;
 <section class="grid p-6">
   <div class="justify-self-center grid max-w-screen-xl w-full">
     <div class="grid gap-4">
-      <HeadingOne text={content.title} lineHeight />
-      <p class="text-sm xxl:text-xl md:max-w-[65%]">
+      <HeadingOne text={content.title} lineHeight color="text-primary" />
+      <p class="text-sm text-primary xxl:text-xl md:max-w-[65%]">
         {content.description}
       </p>
       <div>
-        <p class="text-sm xxl:text-lg">role - {content.role}</p>
-        <p class="text-sm xxl:text-lg">year - {content.year}</p>
-        <p class="text-sm xxl:text-lg">client - {content.client}</p>
+        <p class="text-sm text-primary xxl:text-lg">role - {content.role}</p>
+        <p class="text-sm text-primary xxl:text-lg">year - {content.year}</p>
+        <p class="text-sm text-primary xxl:text-lg">
+          client - {content.client}
+        </p>
       </div>
     </div>
   </div>
