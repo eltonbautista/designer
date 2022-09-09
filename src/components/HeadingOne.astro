@@ -8,15 +8,7 @@ export interface ICaseStudyLayout {
 const { lineHeight, pl, text, color } = Astro.props;
 ---
 
-<h1
-  class:list={[
-    "text-4xl",
-    "lg:text-8xl",
-    "xl:text-9xl",
-    lineHeight ? null : "leading-[0]",
-    color,
-  ]}
->
+<h1 class:list={["text-4xl", "lg:text-8xl", "xl:text-9xl", color]}>
   <span class:list={[pl]}>
     {text}
     <slot />
