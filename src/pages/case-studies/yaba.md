@@ -9,9 +9,9 @@ role: software, branding, ux/ui
 year: 2022
 client: Robert Kugler
 
-isoione: /iphone.webp
-isoitwo: /iphone.webp
-isoithree: /iphone.webp
+isoione: /yaba.png
+isoitwo: /yaba.png
+isoithree: /yaba.png
 
 challenge: the challenge.
 challengeOne: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum vel id debitis ullam neque nihil dignissimos saepe architecto laborum commodi ad possimus eveniet provident, nemo magni, perspiciatis laudantium atque!
