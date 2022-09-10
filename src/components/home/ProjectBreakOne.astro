@@ -24,11 +24,11 @@
         > the progress. <span class="text-secondary">be</span> the change you want
         to see.
       </p>
-      <button
-        xyz="fade down-100% back-10 delay-30"
-        class="btn btn-outline lowercase max-w-[50%] mt-6 mam-button"
-        ><a href="/about">more about me.</a>
-      </button>
+      <div class="mam-button" xyz="fade down-100% back-10 delay-30">
+        <button class="btn btn-outline lowercase max-w-[50%] mt-6 mam-button"
+          ><a href="/about">more about me.</a>
+        </button>
+      </div>
     </div>
   </div>
   <script defer is:inline>
@@ -44,13 +44,13 @@
           observer.disconnect();
           entry.target.classList.add("xyz-in");
           text[0].parentElement.classList.add("xyz-in");
+          mamButton.classList.add("xyz-in");
           text.forEach((text, i) => {
             text.classList.add("xyz-in");
             if (i < words.length) {
               words[i].classList.add("xyz-in");
             }
           });
-          mamButton.classList.add("xyz-in");
         }
       });
     });
