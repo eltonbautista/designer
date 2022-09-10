@@ -7,7 +7,7 @@ export interface IImageSetOneProps {
 const { content } = Astro.props;
 ---
 
-<section class="grid">
+<section class="grid p-6">
   <div class="justify-self-center grid max-w-screen-xl w-full">
     <!-- <video autoplay loop muted max-w-full max-h-full>
       <source src={content.video} />
@@ -15,12 +15,12 @@ const { content } = Astro.props;
     <div class="flex w-full pt-6">
       <div class="grid flex-grow card rounded-box justify-start items-center">
         <a href={content.previous} class="link text-info no-underline"
-          >&#171; previous.</a
+          >&#171; {content.previous.substr(14).replaceAll("-", " ")}.</a
         >
       </div>
       <div class="grid flex-grow card rounded-box items-center justify-end">
         <a href={content.next} class="link text-base-content no-underline"
-          >next. &#187;</a
+          >{content.next.substr(14).replaceAll("-", " ")}. &#187;</a
         >
       </div>
     </div>
