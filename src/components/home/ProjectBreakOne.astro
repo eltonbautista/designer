@@ -4,11 +4,11 @@
 <section class="grid pl-6 pr-6 pt-14">
   <div class="justify-self-center grid max-w-screen-xl w-full lg:grid-cols-2">
     <h2 class="text-4xl lg:text-6xl">
-      <p>
+      <p class="example-grid" xyz="fade small stagger">
         reimagine the impossible. <br />
-        <span class="text-secondary">become.</span>
-        <span class="text-info">create.</span>
-        <span class="text-accent">inspire</span>.
+        <span class="word text-secondary">become.</span>
+        <span class="word text-info">create.</span>
+        <span class="word text-accent">inspire.</span>
       </p>
     </h2>
     <div class="lg:pl-32">
@@ -29,4 +29,22 @@
       </button>
     </div>
   </div>
+  <script defer is:inline>
+    const words = [...document.querySelectorAll(".word")];
+    const observer = new IntersectionObserver((entries) => {
+      // Loop over the entries
+      entries.forEach((entry) => {
+        // If the element is visible
+        if (entry.isIntersecting) {
+          // Add the animation class
+          observer.disconnect();
+          console.log(words);
+          words.forEach((word) => {
+            word.classList.add("xyz-in");
+          });
+        }
+      });
+    });
+    observer.observe(document.querySelector(".example-grid"));
+  </script>
 </section>

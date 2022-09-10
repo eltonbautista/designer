@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
+    "@animxyz/core": "^0.6.6",
     "daisyui": "^2.25.0"
   }
 }
