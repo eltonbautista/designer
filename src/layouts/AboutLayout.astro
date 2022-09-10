@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+import "../styles/global.css";
+import AboutHero from "../components/about/AboutHero.astro";
+import AboutSkills from "../components/about/AboutSkills.astro";
+const { content } = Astro.props;
+---
+
+<Layout title={`i am: ${content.title}`}>
+  <main class:list={["grid", content.color]} data-theme={content.theme}>
+    <AboutHero content={content} />
+    <!-- <AboutSkills /> -->
+  </main>
+</Layout>
