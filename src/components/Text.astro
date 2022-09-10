@@ -1,0 +1,12 @@
+---
+export interface ITextProps {
+  text: string;
+  textColor: string;
+}
+
+const { text, textColor } = Astro.props;
+---
+
+<p class:list={["text-sm xxl:text-xl lg:text-base md:max-w-[65%]", textColor]}>
+  {text}
+</p>
