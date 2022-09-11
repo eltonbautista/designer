@@ -9,7 +9,14 @@ const { lineHeight, pl, text, color } = Astro.props;
 ---
 
 <h1
-  class:list={["text-4xl", "md:text-7xl", "lg:text-8xl", "xl:text-9xl", color]}
+  class:list={[
+    "text-3xl",
+    "sm:text-4xl",
+    "md:text-7xl",
+    "lg:text-8xl",
+    "xl:text-9xl",
+    color,
+  ]}
 >
   <span class:list={[pl]}>
     {text}
