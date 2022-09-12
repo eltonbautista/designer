@@ -10,13 +10,24 @@ const { content, bgColor } = Astro.props;
   <div class="justify-self-center grid max-w-screen-xl w-full">
     <div class="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-none gap-4">
       <div class="bg-primary grid place-items-center">
-        <img class="h-4/5" src={content.istione} />
+        <img
+          class="h-4/5"
+          src={content.istione}
+          alt="project mockup in iphone facing left"
+        />
       </div>
       <div class="bg-neutral grid items-center pl-4 pr-4">
-        <img src={content.istitwo} />
+        <img
+          src={content.istitwo}
+          alt="project mockup in iphone facing middle"
+        />
       </div>
       <div class="bg-accent grid place-items-center">
-        <img class="h-4/5" src={content.istithree} />
+        <img
+          class="h-4/5"
+          src={content.istithree}
+          alt="project mockup in iphone facing right"
+        />
       </div>
     </div>
   </div>

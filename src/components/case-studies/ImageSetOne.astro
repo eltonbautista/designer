@@ -14,13 +14,13 @@ const { content, bgColorOne, bgColorTwo, bgColorThree } = Astro.props;
   <div class="justify-self-center grid max-w-screen-xl w-full">
     <div class="grid grid-rows-3 gap-4 lg:grid-rows-2 lg:grid-cols-2">
       <div class:list={["lg:col-span-2", bgColorOne]}>
-        <img src={content.isoione} />
+        <img src={content.isoione} alt="project mockup facing left" />
       </div>
       <div class:list={["flex", "items-center", bgColorTwo]}>
-        <img src={content.isoitwo} />
+        <img src={content.isoitwo} alt="project mockup facing middle" />
       </div>
       <div class:list={["flex", "items-center", bgColorThree]}>
-        <img src={content.isoithree} />
+        <img src={content.isoithree} alt="project mockup facing right" />
       </div>
     </div>
   </div>
