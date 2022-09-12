@@ -7,7 +7,7 @@ color: text-neutral
 description: A Single Page Application (SPA) developed by 3 developers using agile practices. Groomify takes inspiration from Helcim (a local company) and is built with VueJS.
 role: mockup, research, ux/ui
 year: 2022
-client: undisclosed
+technologies: vue.js, typescript, html, scss
 
 isoione: /groomify-hand.png
 isoitwo: /groomify-ipad.png

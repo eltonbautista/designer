@@ -7,7 +7,7 @@ color: primary
 description: tracking your spendings and managing your money should be easy. save more, feel better - it's that simple. we know the struggles of managing your accounts, keeping track of your cashflow, and giving in to those "necessary" temptations... 
 role: full-stack, branding, ux/ui
 year: 2022
-client: Robert Kugler
+technologies: next.js, react, typescript, expressjs, supabase, tailwind css, daisyui, plaid api
 
 isoione: /yaba.png
 isoitwo: /yaba-ipad.png

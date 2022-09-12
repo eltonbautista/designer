@@ -5,9 +5,9 @@ theme: valentine
 color: text-neutral
 
 description: it was a tuesday morning just like any other, laying on the green grass I started to wonder. what would it feel like to be never without another?
-role: software, branding, ux/ui
+role: health & wellness, copywriting, ux/ui
 year: 2022
-client: Robert Kugler
+technologies: still in development
 
 isoione: /nwa.png
 isoitwo: /nwa.png
