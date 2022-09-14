@@ -1,7 +1,7 @@
 ---
 layout: /src/layouts/AboutLayout.astro
 title: elton bautista.
-theme: valentine
+theme: garden
 color: text-primary
 
 description: I get lost writing code! As I sit on my chair and type away at the keyboard all I can think about is what I'm building, how to build it, and what I get to build next. One of my true passions is learning. For me, there's been nothing more exciting to learn than programming. I love this.
