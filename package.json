@@ -14,6 +14,7 @@
     "@astrojs/tailwind": "^1.0.0",
     "@types/react": "^18.0.18",
     "astro": "^1.0.0-beta.63",
+    "astro-compress": "^1.0.8",
     "astro-robots-txt": "^0.3.8",
     "astro-seo": "^0.6.0",
     "react": "^18.2.0",
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "@animxyz/core": "^0.6.6",
+    "astro-imagetools": "^0.6.10",
     "daisyui": "^2.25.0"
   }
 }
